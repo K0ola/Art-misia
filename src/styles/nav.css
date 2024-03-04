@@ -3,7 +3,6 @@
     src: url('./assets/fonts/Rosarivo-Italic.ttf');
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -24,27 +23,27 @@ nav {
     padding: 10px 20px;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     flex-direction: row;
-    gap: 52px;
+    gap: 52px;   
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
-nav>ul>a {
-    width: fit-content;
+nav > ul > a {
+    width: fit-content;    
     cursor: pointer;
     color: var(--main-color);
     text-align: center;
     font-size: var(--subtitle-size);
     border: none;
-    position: relative;
-    overflow: hidden;
+    position: relative; 
+    overflow: hidden; 
     text-decoration: none;
 }
 
-nav>ul>a:not(#btn-resa-nav)::after {
+nav > ul > a:not(#btn-resa-nav)::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -57,7 +56,7 @@ nav>ul>a:not(#btn-resa-nav)::after {
     transition: transform 0.5s ease;
 }
 
-nav>ul>a:not(#btn-resa-nav):hover::after {
+nav > ul > a:not(#btn-resa-nav):hover::after {
     transform: translateX(-50%) scaleX(1);
 }
 
@@ -70,7 +69,6 @@ nav>ul>a:not(#btn-resa-nav):hover::after {
     overflow: hidden;
     background-color: transparent;
 }
-
 #btn-resa-nav:hover {
     color: var(--secondary-color);
 }
@@ -94,12 +92,15 @@ nav>ul>a:not(#btn-resa-nav):hover::after {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
+
+
+
+
 /* Animations / Keyframes */
 @keyframes hoverOn {
     from {
         transform: translateX(-50%) scaleX(0);
     }
-
     to {
         transform: translateX(-50%) scaleX(1);
     }
@@ -109,97 +110,7 @@ nav>ul>a:not(#btn-resa-nav):hover::after {
     from {
         transform: translateX(-50%) scaleX(1);
     }
-
     to {
         transform: translateX(-50%) scaleX(0);
     }
-}
-
-/* Variables */
-:root {
-    /* Colors */
-    --main-color: #ffffff;
-    --secondary-color: #000000;
-    --third-color: #e6e7cd;
-    --fourth-color: #FBC06C;
-
-
-
-    /* Fonts */
-    --main-font: 'Rosaviro-Italic', sans-serif;
-    --secondary-font: '/', sans-serif;
-    --third-font: '/', sans-serif;
-
-
-    /* Font-size */
-    --title-size: 2.5em;
-    --subtitle-size: 1.5em;
-    --text-size: 1em;
-}
-
-
-/* Body */
-body {
-    color: var(--third-color);
-
-}
-
-.nav {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-}
-
-.nav ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.header {
-    background-image: url("./assets/img-header.png");
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: var(--main-font);
-}
-
-.header h1 {
-    font-size: 6.563rem;
-    margin-bottom: 45px;
-}
-
-.header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 155px;
-}
-
-.header h3 {
-    font-size: 1.875rem;
-    margin-bottom: 10px;
-}
-
-.header:first-child(p) {
-    font-size: 1.563rem;
-    margin-bottom: 10px;
-}
-
-.btn-link-billeterie {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    background-color: var(--fourth-color);
-    padding: 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    color: var(--secondary-color);
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-link-billeterie p {
-    font-size: 1.563rem;
 }
