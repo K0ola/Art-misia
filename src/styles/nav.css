@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Rosarivo-Italic';
-    src: url('./assets/fonts/Rosarivo-Italic.ttf');
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +9,18 @@ body {
 }
 
 nav {
-    position: sticky;
-    z-index: 1;
+    position: fixed;
+    z-index: 100;
     top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 20px;
+    border-bottom: solid 2px var(--fourth-color);
+    width: 90%;
+    margin: auto;
 }
 
 nav > ul {
@@ -41,6 +41,7 @@ nav > ul > a {
     position: relative; 
     overflow: hidden; 
     text-decoration: none;
+    font-family: var(--main-font);
 }
 
 nav > ul > a:not(#btn-resa-nav)::after {
@@ -63,12 +64,13 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
 #btn-resa-nav {
     border: solid 2px var(--main-color);
     padding: 15px 25px;
-    border-radius: 93.94px;
+    border-radius: 90px;
     color: var(--main-color);
     position: relative;
     overflow: hidden;
     background-color: transparent;
 }
+
 #btn-resa-nav:hover {
     color: var(--secondary-color);
 }
@@ -93,9 +95,6 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
 }
 
 
-
-
-
 /* Animations / Keyframes */
 @keyframes hoverOn {
     from {
@@ -113,4 +112,85 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
     to {
         transform: translateX(-50%) scaleX(0);
     }
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 1400px){
+    nav {
+        padding: 5px 10px;
+    }
+
+    #btn-resa-nav {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    nav > ul > a {
+        font-size: var(--navbar-laptop-small);
+    }
+
+    #btn-resa-nav {
+        padding: 10px 15px;
+    }
+
+
+
+}
+@media screen and (max-width: 1080px){
+    nav > ul > a {
+        font-size: var(--subtitle-size-tablet);
+    }
+    nav > ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        z-index: 10;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: var(--secondary-color);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        padding: 10px 10px;
+    }
+    nav > ul {
+        gap: 20px;
+    }
+    nav > ul > a {
+        font-size: var(--subtitle-size-mobile);
+    }
+    #btn-resa-nav {
+        padding: 10px 20px;
+    }
+    
 }

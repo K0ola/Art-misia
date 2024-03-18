@@ -1,6 +1,23 @@
 /* Importation des polices d'écriture */
+@font-face {
+    font-family: 'Rosarivo';
+    src: url('../assets/fonts/Rosarivo/Rosarivo-Regular.ttf');
+}
 
+@font-face {
+    font-family: 'Rosarivo-Italic';
+    src: url('../assets/fonts/Rosarivo/Rosarivo-Italic.ttf');
+}
 
+@font-face {
+    font-family: 'Cormorant';
+    src: url('../assets/fonts/Cormorant/static/Cormorant-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/static/Montserrat-Regular.ttf');
+}
 
 /* Style global */
 *{
@@ -17,19 +34,75 @@
     --secondary-color: #000000;
     --third-color: #e6e7cd;
     --fourth-color: #FBC06C;
+    --fifth-color: #0F0F0F;
     
 
 
     /* Fonts */
-    --main-font: 'Rosaviro-Italic', sans-serif;
-    --secondary-font: '/', sans-serif;
-    --third-font: '/', sans-serif;
+    --main-font: 'Rosarivo', sans-serif;
+    --secondary-font: 'Rosarivo-Italic', sans-serif;
+    --third-font: 'Montserrat', sans-serif;
+    --fourth-font: 'Cormorant', sans-serif;
 
 
-    /* Font-size */
+    /* Font-size de base */
     --title-size: 2.5em;
     --subtitle-size: 1.5em;
-    --text-size: 1em;
+    --text-size: 1.1em;
 
 
+    /* Font-size h1 */
+    --header-title: 7em;
+    --header-subtitle: 2.5em;
+    --header-text: 2em;
+
+    --header-title-laptop: 5em;
+    --header-subtitle-laptop: 2.2em;
+    --header-text-laptop: 1.8em;
+
+    --header-title-laptop-small: 4em;
+    --header-subtitle-laptop-small: 2em;
+    --header-text-laptop-small: 1.5em;
+
+    --header-title-tablet: 3em;
+    --header-subtitle-tablet: 1.8em;
+    --header-text-tablet: 1.3em;
+
+    --header-title-mobile: 3em;
+    --header-subtitle-mobile: 1.5em;
+    --header-text-mobile: 1.2em;
+
+    /* Font-size navbar */
+    --navbar-desktop: 1.7em;
+    --navbar-laptop: 1.5em;
+    --navbar-laptop-small: 1.3em;
+    --navbar-tablet: 1.2em;
+    --navbar-mobile: 1em;
+
+    /* Font-size mobile */
+    --title-size-mobile: 1.5em;
+    --subtitle-size-mobile: 1em;
+    --text-size-mobile: 0.7em;
+
+    /* Font-size tablet */
+    --title-size-tablet: 2em;
+    --subtitle-size-tablet: 1.2em;
+    --text-size-tablet: 0.7em;
+
+    /* Font-size desktop */
+    --title-size-desktop: 3em;
+    --subtitle-size-desktop: 2em;
+    --text-size-desktop: 1.3em;
+
+    /* Font-size laptop */
+    --title-size-laptop: 2.6em;
+    --subtitle-size-laptop: 1.7em;
+    --text-size-laptop: 1em;
+
+    /* Font-size laptop small */
+    --title-size-laptop-small: 2.3em;
+    --subtitle-size-laptop-small: 1.5em;
+    --text-size-laptop-small: 0.8em;
+
+    
 }
