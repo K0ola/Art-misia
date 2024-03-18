@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aframe test dev</title>
+    <script src = "https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="skyTexture" src="starmap_2020_4k.png">
+        </a-assets>
+
+        <a-sky src="#skyTexture"></a-sky>
+        <!-- <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane> -->
+        <!-- <a-entity
+            text="value: HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA !; color: #f0f0f0"
+            position="-0.9 0.2 -3"
+            scale="1.5 1.5 1.5">
+        </a-entity> -->
+        <!-- <a-assets>
+             <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg"> 
+        </a-assets> -->
+        <!-- <a-box 
+            src="#boxTexture" 
+            position="0 2 -5" 
+            rotation="0 45 45"
+            color="#4CC3D9" 
+            scale="2 2 2"
+            animation="property: object3D.position.y; 
+                to: 2.2; 
+                dir: alternate; 
+                dur: 2000; 
+                loop: true">
+        </a-box> -->
+        <a-assets>
+            <a-asset-item id="model-3d" src="exposol.glb"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#model-3d" position="0 0 0"></a-entity>
+    </a-scene>
+    
+</body>
+</html>
