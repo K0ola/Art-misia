@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+main {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    text-align: center;
+    position: relative;
+    transform: translate(0, 35%);
+}
+
+main p:first-of-type {
+    width: 60%;
+    display: block;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+}
+
+.main-title, .line {
+    margin-bottom: 35px;
+}
+
+
+h2, p {
+    margin-bottom: 70px;
+}
+
+.red {
+    color: red;
+}
+
+.line {
+    position: relative;
+    transform: translate(-50%);
+    display: block;
+    width: 461px;
+    height: 2px;
+    left: 50%;
+    background-color: var(--fourth-color);
+}
+
+main a {
+    padding: 12px 15px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}

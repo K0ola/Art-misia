@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'Rosarivo-Italic';
+    src: url('../assets/fonts/Rosarivo-Italic.ttf');
+}
+
+body {
+    background-color: black;
+    background-image: url("../assets/imgs/img-reservation.png");
+}
+
+main {
+    font-family: var(--main-font);
+    margin: 0 4%;
+    color: var(--main-color);
+}
+
+main h1 {
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+main .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .main-content .div-top {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+@media (max-width: 1200px) {
+    main .main-content .div-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.div-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+    .div-left {
+        width: 100%;
+    }
+
+}
+
+.div-left .date-header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line-date {
+    display: block;
+    width: 217px;
+    height: 2px;
+    background: #FBC06C;
+}
+
+.line-total {
+    display: block;
+    width: 824px;
+    height: 2px;
+    background: #FBC06C;
+}
+
+.div-left form .custom-datepicker p {
+    font-size: 1.125rem;
+    padding: 5px;
+}
+
+.div-left form {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.div-left form .date-header, .div-right form h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.div-right form label {
+    font-size: 1.125rem;
+    font-style: italic;
+}
+
+.div-left form input[type="radio"] {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+}
+
+.div-left form .div-horaire .div-horaire-input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-left form .div-horaire .div-horaire-input label {
+    color: black;
+    background-color: var(--main-color);
+    margin-right: 1.4rem;
+    margin-bottom: 1.4rem;
+    width: fit-content;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.div-left form button {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    width: 22%;
+}
+
+.div-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--main-color);
+    height: fit-content;
+}
+
+.required {
+    color: red;
+}
+
+.custom-datepicker {
+    border: 1px solid #838383;
+    padding: 10px;
+}
+
+.month-picker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.days-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.day-past {
+    color: #969696;
+    cursor: default;
+}
+
+.days .day:not(.day-past):hover {
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    cursor: pointer;
+
+}
+
+.days .selected, .div-left form .div-horaire .div-horaire-input .selected {
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+    border: var(--main-color) 1px solid;
+}
+
+.div-billet-type {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.div-billet-type .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+}
+
+.div-billet-total {
+    margin-top: 45px;
+    margin-bottom: 65px;
+}
+
+.div-right button[type="submit"], .div-bottom button[type="submit"] {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+
+}
+
+.div-billet-type .content div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.div-billet-type .content div input {
+    padding: 5px;
+}
+
+.div-billet-type label p {
+    margin: 0;
+    padding: 0;
+}
+
+.div-bottom * {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.div-bottom .bottom-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-bottom h2 {
+    font-size: 1.875rem;
+}
+
+.div-bottom label, .div-bottom p {
+    font-size: 1.563rem;
+}
+
+.div-bottom label {
+    margin-bottom: 5px;
+}
+
+.div-bottom input {
+    padding: 7px;
+    background-color: #000;
+    border: 1px solid #838383;
+    color: var(--main-color);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,18 +1,10 @@
-@font-face {
-    font-family: 'Rosarivo-Italic';
-    src: url('../assets/fonts/Rosarivo-Italic.ttf');
-}
-
-
-
 body {
     background-color: black;
+    background-image: url("../assets/imgs/img-header.png");
 }
 
 
 .header {
-    background-image: url("../assets/imgs/img-header.png");
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -8,19 +8,10 @@
     <link rel="stylesheet" href="src/styles/nav.css">
     <link rel="stylesheet" href="src/styles/index.css">
     <title>Art&Misia - Virtual Exposition</title>
-
 </head>
 
 <body>
-    <nav>
-        <a href="#top"><img src="./src/assets/imgs/logo.png" alt="logo agence"></a>
-        <ul>
-            <a href="#">L'agence</a>
-            <a href="#">L'exposition</a>
-            <a href="#">Galerie</a>
-            <a href="#" id="btn-resa-nav">Réserver un billet</a>
-        </ul>
-    </nav>
+    <?php include('header.php') ?>
     <header>
 
         <section class="header">
@@ -33,7 +24,7 @@
 
             <p>Exposition du 8 avril au 21 juin 2024</p>
 
-            <a href="billeterie.html" class="btn-link-billeterie">
+            <a href="billeterie.php" class="btn-link-billeterie">
                 <p>Réserver un billet</p><img src="./src/assets/icons/arrow90deg.svg" alt="" srcset="">
             </a>
         </section>
