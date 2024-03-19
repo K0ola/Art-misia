@@ -81,22 +81,25 @@ body {
     font-family: var(--secondary-font);
     font-size: var(--title-size);
     color: var(--fourth-color);
+    text-align: center;
     margin-top: 90px;
-    margin-left: 200px;
     margin-bottom: 20px;
 }
 
 .about p {
     font-family: var(--third-font);
     font-size: var(--text-size);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .link-agence {
+    display: block;
     color: var(--main-color);
     font-family: var(--third-font);
     font-size: var(--text-size);
     font-weight: bold;
+    top: 20px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -115,11 +118,17 @@ body {
     column-gap: 50px;   
 }
 
+.more-infos h3{
+    color: var(--fourth-color);
+    font-family: var(--secondary-font);
+    font-size: var(--subtitle-size);
+}
+
 .about-infos h3 {
     font-family: var(--secondary-font);
     font-size: var(--subtitle-size);
     color: var(--fourth-color);
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 20px;
 }
 
@@ -214,8 +223,8 @@ body {
     font-family: var(--secondary-font);
     font-size: var(--title-size);
     color: var(--fourth-color);
+    text-align: center;
     margin-top: 90px;
-    margin-left: 200px;   
     margin-bottom: 25px;
 }
 
@@ -229,7 +238,7 @@ body {
     font-family: var(--secondary-font);
     font-size: var(--subtitle-size);
     color: var(--fourth-color);
-    border-top: 2px solid var(--fourth-color);
+    /* border-top: 2px solid var(--fourth-color); */
     padding-top: 50px;;
 }
 
@@ -307,11 +316,7 @@ body {
 }  */
 
 
-
 /* Media queries section */
-/* Media queries section */
-
-
 @media screen and (max-width: 1920px) {
     /* Section header */
     .header h1 {
@@ -474,6 +479,7 @@ body {
 
     .about p {
         font-size: var(--text-size);
+        margin-bottom: 30px;
     }
 
     .about-content {
@@ -727,6 +733,197 @@ body {
 
 }
 
+@media screen and (max-width: 1100px) {
+    /* Section header */
+    .header h1 {
+        font-size: var(--header-title-tablet);
+    }
+
+    .header h2 {
+        font-size: var(--header-subtitle-tablet);
+        margin-bottom: 50px;
+    }
+
+    .header h3 {
+        font-size: var(--header-text-tablet);
+    }
+
+    .btn-link-billeterie {
+        padding: 15px;
+        width: 250px;
+    }
+
+    .btn-link-billeterie p {
+        font-size: var(--navbar-tablet);
+    }
+
+    /* Section about */
+    .about {
+        column-gap: 8%;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .about h2 {
+        font-size: var(--title-size-tablet);
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .about p {
+        font-size: var(--text-size-tablet);
+    }
+
+    .link-agence {
+        font-size: var(--text-size-tablet);
+    }
+
+    .about-content {
+        max-width: 45%;
+    }
+
+    .about-infos {
+        column-gap: 20px;
+    }
+
+    .about-infos h3 {
+        font-size: var(--subtitle-size-tablet);
+    }
+
+    .top-img {
+        height: 30vh;
+        top: -70px;
+        left: 40px;
+    }
+
+    .bottom-img {
+        height: 30vh;
+        left: 165px;
+        top: 40px;
+    }
+
+    /* Section concept */
+    .concept {
+        column-gap: 100px;
+    }
+
+    .teaser {
+        width: 35vw;
+    }
+
+    .concept h2 {
+        font-size: var(--title-size-tablet);
+    }
+
+    .concept p {
+        font-size: var(--text-size-tablet);
+    }
+
+    .concept h3 {
+        font-size: var(--subtitle-size-tablet);
+    }
+
+    .concept-content {
+        max-width: 45%;
+    }
+
+    /* Section galerie */
+    .galerie h2 {
+        font-size: var(--title-size-tablet);
+    }
+
+    .galerie p {
+        font-size: var(--text-size-tablet);
+    }
+
+    .galerie-img-container img {
+        height: 60vh;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    /* Section header */
+    .btn-link-billeterie {
+        padding: 15px;
+    }
+
+    /* Section about */
+    .about {
+        column-gap: 6%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .about-content {
+        max-width: 45%;
+    }
+
+    .about-infos {
+        column-gap: 20px;
+    }
+
+    .about-infos h3 {
+        font-size: var(--subtitle-size-mobile);
+    }
+
+    .top-img {
+        height: 30vh;
+        top: -70px;
+        left: 20px;
+    }
+
+    .bottom-img {
+        height: 30vh;
+        left: 150px;
+        top: 40px;
+    }
+
+    /* Section concept */
+    .concept {
+        column-gap: 80px;
+    }
+
+    .teaser {
+        width: 35vw;
+    }
+
+    .concept h2 {
+        font-size: var(--title-size-mobile);
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .concept p {
+        font-size: var(--text-size-mobile);
+    }
+
+    .concept h3 {
+        font-size: var(--subtitle-size-mobile);
+    }
+
+    .concept-content {
+        max-width: 45%;
+    }
+
+    /* Section galerie */
+    .galerie h2 {
+        font-size: var(--title-size-mobile);
+    }
+
+    .galerie p {
+        font-size: var(--text-size-mobile);
+    }
+}
 
 
+@media screen and (max-width: 960px) {
+    /* Section about */
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 12%;
+    }
+
+}
     

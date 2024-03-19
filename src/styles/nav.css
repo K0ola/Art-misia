@@ -127,6 +127,9 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
     z-index: 10;
 }
 
+.mobile-menu {
+    display: none;
+}
 
 /* Media queries */
 @media screen and (max-width: 1400px){

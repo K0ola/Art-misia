@@ -38,36 +38,6 @@
     </header>
 
     <main>
-    <section class="about">
-
-        <div class="about-content">
-            <h2>L'agence</h2>
-            <p>Notre agence Art&misia est heureuse de vous présenter sa toute première exposition virtuelle autour d’Artemisia Gentileschi. Dans le cadre de cette exposition, vous retrouverez un parcours immersif vous amenant à découvrir cette célèbre artiste peintre italienne du 17ème siècle. Cette exposition débute le 8 avril et se déroulera jusqu’au 21 juin 2024. Vous avez la possibilité de vivre cette expérience depuis chez vous ou alors de venir sur place dans notre galerie. </p>
-            <a class="link-agence" href="#">En savoir plus</a>
-            <div class="about-infos">
-                <div>
-                    <h3>Lieu</h3>
-                    <p>Art&misia - 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
-                </div>
-                <div>
-                    <h3>Horaires</h3>
-                    <p>Du 8 avril au 21 juin 2023. Tous les jours de 10h à 18h.</p>
-                </div>
-                <div>
-                    <h3>Téléphone</h3>
-                    <p>06 12 34 56 78</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="about-img-container">
-            <img class="top-img" src="./src/assets/imgs/img-about1.jpg" alt="photo galerie">
-            <img class="bottom-img" src="./src/assets/imgs/img-about2.jpg" alt="photo galerie">
-        </div>
-        <!-- <div class="déco"></div> -->
-
-    </section>
-
     <section class="concept">
 
         <div class="video-container">
@@ -81,8 +51,21 @@
             <p>Découvrez les oeuvres d’Artemisia Gentileschi comme vous ne les avez jamais vu. Plongez dans l'univers fascinant d'Artemisia Gentileschi, l'une des figures les plus marquantes de l'art baroque, à travers une expérience en réalité augmenté inédite.
                 Imaginez-vous déambulant dans une galerie d’art, où les tableaux sont cachés dans l'ombre, attendant d'être révélés. Armé d'une simple lampe torche, vous deviendrez le maître de votre propre expérience artistique, illuminant chaque œuvre et découvrant les détails cachés dans les jeux subtils de lumière et d'ombre.
                 Cette expérience immersive vous permettra de découvrir l'art de Gentileschi sous un nouveau jour, en vous plongeant littéralement au cœur de ses créations. Ne manquez pas cette opportunité unique de découvrir les peintures d’une des peintres les plus remarquable de la Renaissance italienne.</p>
-            <h3>Consignes</h3>
-                <p class="consignes">Vous pouvez vivre cette expérience depuis chez vous ou alors venir sur place dans notre galerie. Pour les personnes souhaitant vivre l’expérience depuis chez elles, il vous suffit de réserver un billet en ligne. Pour les personnes souhaitant venir sur place, vous pouvez vous rendre directement à notre galerie. </p>
+            <!-- <h3>Comment vivre cette expérience ?</h3>
+                <p class="consignes">Vous pouvez vivre cette expérience depuis chez vous ou alors venir sur place dans notre galerie. Pour les personnes souhaitant vivre l’expérience depuis chez elles, il vous suffit de réserver un billet en ligne. Pour les personnes souhaitant venir sur place, vous pouvez vous rendre directement à notre galerie. </p> -->
+                <div class="about-infos">
+            <div>
+                <h3>Lieu</h3>
+                <p>Art&misia - 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
+            </div>
+            <div>
+                <h3>Horaires</h3>
+                <p>Du 8 avril au 21 juin 2023. Tous les jours de 10h à 18h.</p>
+            </div>
+            <div>
+                <h3>Tarifs</h3>
+                <p>Différents tarifs, à partir de 7€</p>
+            </div>
         </div>
 
     </section>
@@ -106,6 +89,38 @@
                 </p>
             </div>
                 <!-- <a class="btn-link-galerie" href="#">Voir plus...</a> -->
+    </section>
+    <section class="about">
+
+    <div class="about-content">
+        <h2>L'agence</h2>
+        <p>Notre agence Art&misia est heureuse de vous présenter sa toute première exposition virtuelle autour d’Artemisia Gentileschi. Dans le cadre de cette exposition, vous retrouverez un parcours immersif vous amenant à découvrir cette célèbre artiste peintre italienne du 17ème siècle. Cette exposition débute le 8 avril et se déroulera jusqu’au 21 juin 2024. Vous avez la possibilité de vivre cette expérience depuis chez vous ou alors de venir sur place dans notre galerie. </p>
+        <!-- <div class="about-infos">
+            <div>
+                <h3>Lieu</h3>
+                <p>Art&misia - 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
+            </div>
+            <div>
+                <h3>Horaires</h3>
+                <p>Du 8 avril au 21 juin 2023. Tous les jours de 10h à 18h.</p>
+            </div>
+            <div>
+                <h3>Téléphone</h3>
+                <p>06 12 34 56 78</p>
+            </div>
+        </div> -->
+        <div class="more-infos">
+            <h3>Vous voulez voir d'autres expositions ?</h3>
+            <a class="link-agence" href="#">En savoir plus</a>
+        </div>
+    </div>
+
+    <div class="about-img-container">
+        <img class="top-img" src="./src/assets/imgs/img-about1.jpg" alt="photo galerie">
+        <img class="bottom-img" src="./src/assets/imgs/img-about2.jpg" alt="photo galerie">
+    </div>
+    <!-- <div class="déco"></div> -->
+
     </section>
     </main>
     <footer>
