@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/styles/nav.css">
     <link rel="stylesheet" href="src/styles/index.css">
     <link rel="stylesheet" href="src/styles/footer.css">
-    <title>Art&Misia - Virtual Exposition</title>
+    <title>Art&Misia - Exposition virtuelle</title>
 </head>
 <body>
     <nav>
