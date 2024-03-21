@@ -157,10 +157,8 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
     #btn-resa-nav {
         padding: 10px 15px;
     }
-
-
-
 }
+
 @media screen and (max-width: 1080px){
     nav > ul > a {
         font-size: var(--subtitle-size-tablet);

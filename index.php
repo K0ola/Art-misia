@@ -30,7 +30,6 @@
             <h1>Artemisia Gentileschi</h1>
             <h2>Toiles d'une vie résilliente</h2>
             <h3>Plongez dans l'exposition immersive et intéractive de la vie d'Artemisia Gentileschi</h3>
-            <!-- <p>Exposition du 8 avril au 21 juin 2024</p> -->
             <a href="billeterie.html" class="btn-link-billeterie">
                 <p>Réserver un billet</p><img src="./src/assets/icons/arrow90deg.svg" alt="" srcset="">
             </a>
@@ -113,7 +112,7 @@
         <img class="top-img" src="./src/assets/imgs/img-about1.jpg" alt="photo galerie">
         <img class="bottom-img" src="./src/assets/imgs/img-about2.jpg" alt="photo galerie">
     </div>
-    <!-- <div class="déco"></div> -->
+    <!-- <div class="deco"></div> -->
 
     </section>
     </main>
