@@ -186,6 +186,12 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
     nav {
         padding: 10px 10px;
     }
+
+    .nav-links {
+        width: 50vw;
+        row-gap: 50px;
+    }
+
     nav > ul {
         gap: 20px;
     }

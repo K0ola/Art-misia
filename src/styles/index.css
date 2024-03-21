@@ -866,10 +866,6 @@ body {
         column-gap: 20px;
     }
 
-    .about-infos h3 {
-        font-size: var(--subtitle-size-mobile);
-    }
-
     .top-img {
         height: 30vh;
         top: -70px;
@@ -892,30 +888,12 @@ body {
     }
 
     .concept h2 {
-        font-size: var(--title-size-mobile);
         margin-left: 0px;
         text-align: center;
     }
 
-    .concept p {
-        font-size: var(--text-size-mobile);
-    }
-
-    .concept h3 {
-        font-size: var(--subtitle-size-mobile);
-    }
-
     .concept-content {
         max-width: 45%;
-    }
-
-    /* Section galerie */
-    .galerie h2 {
-        font-size: var(--title-size-mobile);
-    }
-
-    .galerie p {
-        font-size: var(--text-size-mobile);
     }
 }
 
@@ -984,6 +962,60 @@ body {
 }
     
 @media screen and (max-width: 820px) {
+    /* Section header */
+    .header {
+        background-image: url("../assets/imgs/img-header-tablet.jpg");
+    }
+    .header h1, .header h2, .header h3 {
+        max-width: 90%;
+    }
+    /* Section concept */
+    .concept {
+        height: 100vh;
+    }
 
+    .teaser {
+        margin-top: 100px;
+        width: 60vw;
+    }
+
+    .concept h2 {
+        margin-bottom: 100px;
+    }
+
+    /* Section galerie */
+    .galerie-img-container img {
+        height: 30vh;
+    }
+
+    /* Section about */
+    .about {
+        height: 100vh;
+    }
+
+    .about h2 {
+        margin-bottom: 100px;
+    }
+
+    .top-img {
+        height: 25vh;
+        transform: translate(-15%,-95%);
+    }
+    
+    .bottom-img {
+        height: 25vh;
+        transform: translate(-10%, -40%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Section about */
+    .top-img {
+        transform: translate(-10%,-85%);
+    }
+    
+    .bottom-img {
+        transform: translate(0%, -60%);
+    }
     
 }
