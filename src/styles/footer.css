@@ -221,6 +221,19 @@ footer h3 {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+    footer {
+        height: 75vh;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 20px;
+    }
+
+    .logo-footer {
+        width: 30vw;
+    }
     
 }

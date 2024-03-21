@@ -12,15 +12,15 @@
 </head>
 <body>
     <nav>
-        <a href="#"><img src="./src/assets/imgs/logo.png" alt="logo agence"></a>
+        <a href="#"><img class="logo-nav" src="./src/assets/imgs/logo-agence.svg" alt="logo agence"></a>
         <ul class="nav-links">
-            <a href="#">L'agence</a>
             <a href="#">L'exposition</a>
-            <a href="#">Galerie</a>
+            <a href="#">Expérimenter</a>
+            <a href="#">Connexion</a>
             <a href="#" id="btn-resa-nav">Réserver un billet</a>
             <a href="#">FR | EN</a>
         </ul>
-        <button class="burger-menu" onclick="toggleMenu()">
+        <button class="burger-menu">
             <img src="./src/assets/icons/burgermenu.svg" alt="menu burger"></img>
         </button>
     </nav>  
@@ -48,12 +48,10 @@
 
         <div class="concept-content">
             <h2>Concept</h2>
-            <p>Découvrez les oeuvres d’Artemisia Gentileschi comme vous ne les avez jamais vu. Plongez dans l'univers fascinant d'Artemisia Gentileschi, l'une des figures les plus marquantes de l'art baroque, à travers une expérience en réalité augmenté inédite.
-                Imaginez-vous déambulant dans une galerie d’art, où les tableaux sont cachés dans l'ombre, attendant d'être révélés. Armé d'une simple lampe torche, vous deviendrez le maître de votre propre expérience artistique, illuminant chaque œuvre et découvrant les détails cachés dans les jeux subtils de lumière et d'ombre.
-                Cette expérience immersive vous permettra de découvrir l'art de Gentileschi sous un nouveau jour, en vous plongeant littéralement au cœur de ses créations. Ne manquez pas cette opportunité unique de découvrir les peintures d’une des peintres les plus remarquable de la Renaissance italienne.</p>
-            <!-- <h3>Comment vivre cette expérience ?</h3>
-                <p class="consignes">Vous pouvez vivre cette expérience depuis chez vous ou alors venir sur place dans notre galerie. Pour les personnes souhaitant vivre l’expérience depuis chez elles, il vous suffit de réserver un billet en ligne. Pour les personnes souhaitant venir sur place, vous pouvez vous rendre directement à notre galerie. </p> -->
-                <div class="about-infos">
+            <p>Plongez dans l'univers fascinant d'Artemisia Gentileschi, l'une des figures les plus marquantes de l'art baroque, à travers une expérience en réalité augmenté inédite.
+                <br><br>Imaginez-vous déambulant dans une galerie d’art, où les tableaux sont cachés dans l'ombre, attendant d'être révélés. Armé d'une simple lampe torche, vous deviendrez le maître de votre propre expérience artistique, illuminant chaque œuvre et découvrant les détails cachés dans les jeux subtils de lumière et d'ombre.<br><br>
+                Cette expérience immersive vous permettra de découvrir l'art de Gentileschi sous un nouveau jour, en vous plongeant littéralement au cœur de ses créations.</p>
+            <div class="about-infos">
             <div>
                 <h3>Lieu</h3>
                 <p>Art&misia - 2 Rue Albert Einstein, 77420 Champs-sur-Marne</p>
@@ -76,18 +74,28 @@
         <div class="galerie-content">
             <div class="galerie-img-container">
                 <img src="./src/assets/imgs/img-peinture1.jpg" alt="photo peinture"></img>
-                <p>Siera et Jael est une peinture réalisée par l'artiste Artemisia Gentileschi. Cette œuvre représente une scène biblique où Siera et Jael sont les protagonistes. L'artiste a utilisé des couleurs vives et des contrastes forts pour mettre en valeur les personnages et raconter leur histoire.</p>
-            </div>
-            <div class="galerie-img-container">
-                <p>Marie Madeleine est une œuvre d'art réalisée par Artemisia Gentileschi. Cette peinture représente Marie Madeleine, une figure biblique souvent représentée dans l'art. Gentileschi a capturé l'émotion et la spiritualité de Marie Madeleine avec une technique de peinture experte et une utilisation impressionnante de la lumière et de la couleur.
-                </p>
+                    <div class="galerie-text">
+                        <h3>Siera et Jael (1xxx)</h3>
+                        <p>Siera et Jael est une peinture réalisée par l'artiste Artemisia Gentileschi. Cette œuvre représente une scène biblique où Siera et Jael sont les protagonistes. L'artiste a utilisé des couleurs vives et des contrastes forts pour mettre en valeur les personnages et raconter leur histoire.</p>
+                    </div>
+                </div>
+            <div class="galerie-img-container" id="peinture2">
+                <div class="galerie-text">
+                    <h3>Marie Madeleine (1xxx)</h3>
+                    <p>Marie Madeleine est une œuvre d'art réalisée par Artemisia Gentileschi. Cette peinture représente Marie Madeleine, une figure biblique souvent représentée dans l'art. Gentileschi a capturé l'émotion et la spiritualité de Marie Madeleine avec une technique de peinture experte et une utilisation impressionnante de la lumière et de la couleur.
+                    </p>
+                </div>
                 <img src="./src/assets/imgs/img-peinture2.jpg" alt="photo peinture"></img>
             </div>
             <div class="galerie-img-container">
                 <img src="./src/assets/imgs/img-peinture3.jpg" alt="photo peinture"></img>
-                <p>"Corisca et le Satyre" est une œuvre d'art réalisée par Artemisia Gentileschi. Cette peinture représente une scène mythologique où Corisca, une nymphe, est confrontée à un satyre. Gentileschi a utilisé une palette de couleurs vives et un jeu de lumière dramatique pour donner vie à cette scène intense.
-                </p>
+                <div class="galerie-text">
+                    <h3>Corisca et le Satyre (1xxx)</h3>
+                    <p>"Corisca et le Satyre" est une œuvre d'art réalisée par Artemisia Gentileschi. Cette peinture représente une scène mythologique où Corisca, une nymphe, est confrontée à un satyre. Gentileschi a utilisé une palette de couleurs vives et un jeu de lumière dramatique pour donner vie à cette scène intense.
+                    </p>
+                </div>
             </div>
+        </div>
                 <!-- <a class="btn-link-galerie" href="#">Voir plus...</a> -->
     </section>
     <section class="about">
@@ -111,7 +119,7 @@
     </main>
     <footer>
         <div class="footer-content">
-            <img class="logo-footer" src="./src/assets/imgs/logo-agence-footer2.svg" alt="logo agence">
+            <img class="logo-footer" src="./src/assets/imgs/logo-agence.svg" alt="logo agence">
            <ul>
                 <h3>Liens utiles</h3>
                 <a href="#">L'agence</a>

@@ -31,10 +31,10 @@
 :root{
     /* Colors */
     --main-color: #ffffff;
-    --secondary-color: #000000;
+    --secondary-color: #0D0D0D;
     --third-color: #e6e7cd;
     --fourth-color: #FBC06C;
-    --fifth-color: #0F0F0F;
+    --fifth-color: #101010;
     
 
 
@@ -82,7 +82,7 @@
     /* Font-size mobile */
     --title-size-mobile: 1.5em;
     --subtitle-size-mobile: 1em;
-    --text-size-mobile: 0.7em;
+    --text-size-mobile: 0.6em;
 
     /* Font-size tablet */
     --title-size-tablet: 2em;
