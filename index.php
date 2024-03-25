@@ -14,14 +14,14 @@
     <nav>
         <a href="#"><img class="logo-nav" src="./src/assets/imgs/logo-agence.svg" alt="logo agence"></a>
         <ul class="nav-links">
-            <a href="#">L'exposition</a>
+            <a href="#concept">L'exposition</a>
             <a href="#">Expérimenter</a>
             <a href="#">Connexion</a>
             <a href="#" id="btn-resa-nav">Réserver un billet</a>
             <a href="#">FR | EN</a>
         </ul>
         <button class="burger-menu">
-            <img src="./src/assets/icons/burgermenu.svg" alt="menu burger"></img>
+            <img class="burger-icon" src="./src/assets/icons/burgermenu.svg" alt="menu burger"></img>
         </button>
     </nav>  
 
@@ -37,7 +37,7 @@
     </header>
 
     <main>
-    <section class="concept">
+    <section id="concept" class="concept">
 
         <div class="video-container">
             <video class="teaser" controls>

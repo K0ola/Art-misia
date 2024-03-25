@@ -176,14 +176,14 @@ nav > ul > a:not(#btn-resa-nav):hover::after {
         background-color: var(--secondary-color);
         width: 100vw;
         height: 100vh;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
+    
     .nav-links.mobile-menu {
-        display: none;
+        display: flex;
     }
     
 
